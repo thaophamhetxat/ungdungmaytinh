@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <form>
+        <!-- tạo 1 dòng với hearder là caculator-->
+        <tr>
+            <th colspan="4">
+                <p>Caculator</p>
+            </th>
+            <th></th>
+        </tr>
+        <!-- tạo 1 dòng với 2 ô để nhập dữ liệu-->
+        <tr>
+            <td colspan="2">
+                <input type="text" id="nhap_du_lieu_1" name="dulieu1" size="28"/>
+            </td>
+            <td colspan="2">
+                <input type="text" id="nhap_du_lieu_2" name="dulieu2" size="28"/>
+            </td>
+        </tr>
+        <!-- tạo 4 nút bấm với thẻ button kèm hành động là onclick chỉ vào 1 hàm-->
+        <tr>
+            <td>
+                <button type="button"   onclick="Addition()">Addition (+) </button>
+            </td>
+            <td>
+                <button type="button"  onclick="Subtraction()">Subtraction (-) </button>
+            </td>
+            <td>
+                <button type="button"  onclick="Munltication()"> Munltication (X)</button>
+            </td>
+            <td>
+                <button type="button"  onclick="Division()">Division (/) </button>
+            </td>
+        </tr>
+        <!-- tạo 1 dòng để hiển thị kết quả-->
+        <tr>
+            <td colspan="4">
+                <p id="ket_qua">kết quả là:</p>
+            </td>
+        </tr>
+    </form>
+</table>
+<script>
+    <!-- tạo 1 function + hàm ở trên đã tạo, khai báo biến dulieu1 = kiểu string chỉ tới id của dulieu1 rồi tới value-->
+    function Munltication() {
+        let dulieu1 = parseFloat(document.getElementById('nhap_du_lieu_1').value)
+        let dulieu2 = parseFloat(document.getElementById('nhap_du_lieu_2').value)
+        /* khai báo 1 biến ketqua dung để in ket_qua với hành động theo đề bài*/
+        let ketqua = document.getElementById('ket_qua').innerHTML = 'kết quả là: ' + ( dulieu1 * dulieu2);
+    }
+
+    function Subtraction() {
+        let dulieu1 = parseFloat(document.getElementById('nhap_du_lieu_1').value)
+        let dulieu2 = parseFloat(document.getElementById('nhap_du_lieu_2').value)
+        let ketqua = document.getElementById('ket_qua').innerHTML = 'kết quả là: ' + ( dulieu1 - dulieu2);
+    }
+
+    function Addition() {
+        let dulieu1 = parseFloat(document.getElementById('nhap_du_lieu_1').value)
+        let dulieu2 = parseFloat(document.getElementById('nhap_du_lieu_2').value)
+        let ketqua = document.getElementById('ket_qua').innerHTML = 'kết quả là: ' + ( dulieu1 + dulieu2);
+    }
+
+    function Division() {
+        let dulieu1 = parseFloat(document.getElementById('nhap_du_lieu_1').value)
+        let dulieu2 = parseFloat(document.getElementById('nhap_du_lieu_2').value)
+        let ketqua = document.getElementById('ket_qua').innerHTML = 'kết quả là: ' + ( dulieu1 / dulieu2);
+    }
+
+</script>
+</body>
+</html>
