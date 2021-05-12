@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ungdungmaytinhbotuinangcao.css">
+</head>
+<body>
+<div id="khung_hinh">
+    <table>
+        <tr>
+            <td class="man_hinh" colspan="4"><input id="result" type="text"/></td>
+        </tr>
+        <tr class="ban_phim">
+            <td><input class="item" type="button" value="AC" onclick="result.value=''" id="item1"/></td>
+            <td><input class="item" type="button" value="DEL"
+                       onclick="result.value=result.value.substr(0,result.value.length-1)" id="item2"/></td>
+            <td><input class="item" type="button" value="%" onclick="result.value+=this.value"/></td>
+            <td><input class="item" type="button" value="/" onclick="result.value+=this.value"/></td>
+        </tr></td>
+        <tr>
+            <td><input class="item" type="button" value="7" onclick="result.value+=this.value" id="item3"/></td>
+            <td><input class="item" type="button" value="8" onclick="result.value+=this.value" id="item3"/></td>
+            <td><input class="item" type="button" value="9" onclick="result.value+=this.value" id="item3"/></td>
+            <td><input class="item" type="button" value="*" onclick="result.value+=this.value"/></td>
+        </tr>
+        <tr>
+        <td><input class="item" type="button" value="4" onclick="result.value+=this.value" id="item3"/></td>
+        <td><input class="item" type="button" value="2" onclick="result.value+=this.value" id="item3"/></td>
+        <td><input class="item" type="button" value="6" onclick="result.value+=this.value" id="item3"/></td>
+        <td><input class="item" type="button" value="-" onclick="result.value+=this.value"/></td>
+        </tr>
+        <tr>
+            <td><input class="item" type="button" value="1" onclick="result.value+=this.value" id="item3"/></td>
+            <td><input class="item" type="button" value="2" onclick="result.value+=this.value" id="item3"/></td>
+            <td><input class="item" type="button" value="3" onclick="result.value+=this.value" id="item3"/></td>
+            <td><input class="item" type="button" value="+" onclick="result.value+=this.value"/></td>
+        </tr>
+        <tr>
+            <td><input class="item" type="button" value="00" onclick="result.value+=this.value"/></td>
+            <td><input class="item" type="button" value="0" onclick="result.value+=this.value" id="item3"/></td>
+            <td><input class="item" type="button" value="," onclick="result.value+=this.value"/></td>
+            <td><input class="item" type="button" value="=" onclick="result.value=eval(result.value)"/></td>
+        </tr>
+        </tr>
+
+    </table>
+</div>
+
+</body>
+</html>

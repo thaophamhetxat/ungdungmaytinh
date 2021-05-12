@@ -1,0 +1,55 @@
+body{
+    background: olivedrab;
+    width: ;
+}
+/*Chỉnh kích cỡ của màn hình gồm độ cao, mầu sắc*/
+.man_hinh {
+
+    width: 300px;
+    background-color: white;
+    width: 100%;
+}
+/*chỉnh cả khung hình gồm chiều cao,rộng, mầu sắc*/
+#khung_hinh {
+    /*rộng*/
+    width: 312px;
+    /*cao*/
+
+    /*chỉnh màu nền viền bên trong bàn phím*/
+    background-color: cornflowerblue;
+    /*khung hình cách phía trên 20px*/
+    top: 20px;
+    /*khung hình cách phía trái ở giữa*/
+    margin: 0 auto;
+    position: relative;
+}
+
+#ban_phim {
+    height: 50px;
+}
+
+.item {
+    background: orange;
+    /*chỉnh cỡ chũ*/
+    font-size: 30px;
+
+    width: 73px;
+    height: 43px;
+}
+
+#result{
+    height: 60px;
+    background-color: white;
+    width: 97%;
+    position: relative;
+    font-size: 50px;
+}
+#item1 {
+    background: red;
+}
+#item2 {
+    background: red;
+}
+#item3 {
+    background: wheat;
+}
